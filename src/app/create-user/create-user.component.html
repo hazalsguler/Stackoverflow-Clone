@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="form-container">
+        <div class="title">Hesap Oluştur</div>
+        <form [formGroup]="createForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Emailinizi Giriniz</mat-label>
+                <input matInput formControlName="email">
+                <!-- <mat-error>
+                    <p *ngIf="f['email'].errors && f['email'].errors['required']">Email Zorunludur</p>
+                    <p *ngIf="f['email'].errors && f['email'].errors['email']">Email Formatını doğru giriniz</p>
+                </mat-error> -->
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Kullanıcı Adınızı Giriniz</mat-label>
+                <input matInput formControlName="username">
+                <!-- <mat-error>
+                    <p *ngIf="f['username'].errors && f['username'].errors['required']">Kullanıcı Adı Zorunludur</p>
+                    <p *ngIf="f['username'].errors && f['username'].errors['minLength']">Kullanıcı adı uzunluğunu doğru giriniz</p>
+                </mat-error> -->
+            </mat-form-field>
+
+
+            <mat-form-field appearance="outline">
+                <mat-label>Şifrenizi Giriniz</mat-label>
+                <input type="password" matInput formControlName="password">
+                <!-- <mat-error>
+                    <p *ngIf="f['password'].errors && f['password'].errors['required']">Email Zorunludur</p>
+                    <p *ngIf="f['password'].errors">Minimum 8 karakter  giriniz</p>
+                </mat-error> -->
+            </mat-form-field>
+        </form>
+        <div class="buttons-container">
+            <button (click)="createAccount()" [disabled]="createForm.invalid" mat-raised-button class="login-button">
+                Hesap Oluştur
+            </button>
+            <p>Veya</p>
+            <button mat-button routerLink="/login">Giriş Yap</button>
+            
+            </div>
+    </div>
+  </div>
+  
+  

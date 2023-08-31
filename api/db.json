@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "email": "hazalsenaguler@gmail.com",
+      "password": "1234",
+      "username": "Hazalguler",
+      "id": 1
+    }
+  ],
+  "questions": [
+    {
+      "username": "Hazalguler",
+      "question": "bbbb",
+      "solutions": [
+        1
+      ],
+      "id": 1
+    },
+    {
+      "username": "Hazalguler",
+      "question": "aaaa",
+      "solutions": [
+        1
+      ],
+      "id": 2
+    },
+    {
+      "username": "Hazalguler",
+      "question": "h",
+      "solutions": [
+        1
+      ],
+      "id": 3
+    }
+  ]
+}
